@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenDroneDiary Landing Page
 
-## Getting Started
+OpenDroneDiary（オープンソースドローン飛行日誌管理ツール）のランディングページです。
 
-First, run the development server:
+## 概要
+
+このプロジェクトは、[OpenDroneDiary](https://github.com/cyrus07424/openDroneDiary)のためのランディングページ（LP）です。Next.js 15とTailwind CSS 4を使用して構築されており、空をモチーフとした美しいデザインで、ドローン飛行日誌管理ツールの魅力を伝えます。
+
+## 機能
+
+- **レスポンシブデザイン**: モバイル・タブレット・デスクトップに対応
+- **空をモチーフとしたデザイン**: 空のグラデーションと雲のパターンを使用
+- **環境変数対応**: アプリケーションURLを環境変数で設定可能
+- **法的コンテンツ**: 利用規約とプライバシーポリシーを含む
+- **多言語対応**: 日本語でのコンテンツ提供
+- **SEO対応**: 適切なメタデータとタイトル設定
+
+## 使用技術
+
+- Next.js 15
+- TypeScript
+- Tailwind CSS 4
+- React 19
+
+## セットアップ
+
+### 前提条件
+
+- Node.js 18.x以上
+- npm または yarn
+
+### インストール
+
+```bash
+npm install
+```
+
+### 環境変数の設定
+
+`.env.local`ファイルを作成し、以下の環境変数を設定してください：
+
+```env
+NEXT_PUBLIC_APP_URL=https://your-drone-diary-app.com
+```
+
+### 開発サーバーの起動
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてランディングページを確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ビルド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### 静的ファイルの生成
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`out` ディレクトリに静的ファイルが生成されます。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ページ構成
 
-## Deploy on Vercel
+- **ホーム（/）**: メインのランディングページ
+- **利用規約（/terms）**: サービスの利用規約
+- **プライバシーポリシー（/privacy）**: プライバシーポリシー
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## デザイン
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### カラーパレット
+
+- **空の青**: #87ceeb (Sky Blue)
+- **雲の白**: #ffffff (Cloud White)
+- **地平線の青**: #4a90e2 (Horizon Blue)
+- **夕焼けのオレンジ**: #ff8c42 (Sunset Orange)
+- **深い青**: #2c5282 (Deep Blue)
+
+### テーマ
+
+- 空をモチーフとしたグラデーション背景
+- 雲のパターンを使用したヒーローセクション
+- 直感的で親しみやすいUI/UX
+
+## カスタマイズ
+
+### アプリケーションURLの変更
+
+`NEXT_PUBLIC_APP_URL`環境変数を変更することで、「今すぐ始める」ボタンのリンク先を変更できます。
+
+### デザインの変更
+
+`app/globals.css`のCSS変数を変更することで、カラーテーマをカスタマイズできます。
+
+## デプロイ
+
+このプロジェクトは静的サイトとして生成されるため、以下のプラットフォームで簡単にデプロイできます：
+
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## ライセンス
+
+MIT License - 詳細は[LICENSE](LICENSE)ファイルをご確認ください。
+
+## 貢献
+
+プルリクエストやIssueを歓迎します。改善提案がございましたら、お気軽にお知らせください。
+
+## 関連リンク
+
+- [OpenDroneDiary（メインアプリケーション）](https://github.com/cyrus07424/openDroneDiary)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
