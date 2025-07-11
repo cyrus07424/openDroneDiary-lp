@@ -41,7 +41,11 @@ npm install
 
 ```env
 NEXT_PUBLIC_APP_URL=https://your-drone-diary-app.com
+NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 ```
+
+- `NEXT_PUBLIC_APP_URL`: アプリケーションのURL（必須）
+- `NEXT_PUBLIC_GTM_ID`: Google Tag ManagerのコンテナID（オプション）
 
 ### 開発サーバーの起動
 
