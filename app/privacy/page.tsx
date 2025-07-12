@@ -19,6 +19,9 @@ export default function Privacy() {
               <Link href="/" className="text-gray-700 hover:text-deep-blue">
                 ホーム
               </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-deep-blue">
+                よくある質問
+              </Link>
               <Link href="/terms" className="text-gray-700 hover:text-deep-blue">
                 利用規約
               </Link>
