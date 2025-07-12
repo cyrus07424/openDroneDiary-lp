@@ -19,6 +19,9 @@ export default function Terms() {
               <Link href="/" className="text-gray-700 hover:text-deep-blue">
                 ホーム
               </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-deep-blue">
+                よくある質問
+              </Link>
               <Link href="/privacy" className="text-gray-700 hover:text-deep-blue">
                 プライバシーポリシー
               </Link>

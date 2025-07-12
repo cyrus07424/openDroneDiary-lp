@@ -18,6 +18,9 @@ export default function Home() {
               <Link href="#features" className="text-gray-700 hover:text-deep-blue">
                 機能
               </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-deep-blue">
+                よくある質問
+              </Link>
               <Link href="/terms" className="text-gray-700 hover:text-deep-blue">
                 利用規約
               </Link>
@@ -203,6 +206,11 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold text-deep-blue mb-4">法的事項</h3>
               <ul className="space-y-2">
+                <li>
+                  <Link href="/faq" className="text-gray-600 hover:text-deep-blue">
+                    よくある質問
+                  </Link>
+                </li>
                 <li>
                   <Link href="/terms" className="text-gray-600 hover:text-deep-blue">
                     利用規約
