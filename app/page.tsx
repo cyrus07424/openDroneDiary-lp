@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || '#';
@@ -172,6 +173,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Contact Form */}
+      <ContactForm />
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200">
