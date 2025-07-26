@@ -14,6 +14,7 @@ OpenDroneDiary（オープンソースドローン飛行日誌管理ツール）
 - **法的コンテンツ**: 利用規約とプライバシーポリシーを含む
 - **多言語対応**: 日本語でのコンテンツ提供
 - **SEO対応**: 適切なメタデータとタイトル設定
+- **Slack通知システム**: ユーザー登録、ログイン、データ更新時のSlack通知機能
 
 ## 使用技術
 
@@ -42,10 +43,12 @@ npm install
 ```env
 NEXT_PUBLIC_APP_URL=https://your-drone-diary-app.com
 NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
 ```
 
 - `NEXT_PUBLIC_APP_URL`: アプリケーションのURL（必須）
 - `NEXT_PUBLIC_GTM_ID`: Google Tag ManagerのコンテナID（オプション）
+- `SLACK_WEBHOOK_URL`: Slack通知用のWebhook URL（オプション）
 
 ### 開発サーバーの起動
 
@@ -74,6 +77,19 @@ npm run build
 - **ホーム（/）**: メインのランディングページ
 - **利用規約（/terms）**: サービスの利用規約
 - **プライバシーポリシー（/privacy）**: プライバシーポリシー
+- **よくある質問（/faq）**: よくある質問
+
+## API エンドポイント
+
+Slack通知システムの以下のAPIエンドポイントが利用可能です：
+
+- **POST /api/notifications/user-registration**: ユーザー登録通知
+- **POST /api/notifications/user-login**: ユーザーログイン通知
+- **POST /api/notifications/data-registration**: データ登録通知
+- **POST /api/notifications/data-update**: データ更新通知
+- **GET /api/test-notifications**: テスト通知
+
+詳細な使用方法については[SLACK_NOTIFICATIONS.md](./SLACK_NOTIFICATIONS.md)を参照してください。
 
 ## デザイン
 
