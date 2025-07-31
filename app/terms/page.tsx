@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { Metadata } from "next";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "利用規約 | OpenDroneDiary",
@@ -9,26 +10,7 @@ export const metadata: Metadata = {
 export default function Terms() {
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <Link href="/" className="text-2xl font-bold text-deep-blue">
-              🛩️ OpenDroneDiary
-            </Link>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-deep-blue">
-                ホーム
-              </Link>
-              <Link href="/faq" className="text-gray-700 hover:text-deep-blue">
-                よくある質問
-              </Link>
-              <Link href="/privacy" className="text-gray-700 hover:text-deep-blue">
-                プライバシーポリシー
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg max-w-none">
@@ -125,6 +107,8 @@ export default function Terms() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
