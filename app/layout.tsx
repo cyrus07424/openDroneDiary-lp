@@ -14,10 +14,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "オープンソースドローン飛行日誌管理ツール",
+  title: {
+    default: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
+    template: "%s | OpenDroneDiary"
+  },
   description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
-  keywords: ["ドローン", "飛行日誌", "管理ツール", "オープンソース", "記録"],
-  authors: [{ name: "Open Drone Diary" }],
+  keywords: ["ドローン", "飛行日誌", "管理ツール", "オープンソース", "記録", "OpenDroneDiary", "UAV", "無人航空機"],
+  authors: [{ name: "OpenDroneDiary" }],
+  creator: "OpenDroneDiary",
+  publisher: "OpenDroneDiary",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: "https://open-drone-diary.com/",
+    siteName: "OpenDroneDiary",
+    title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
+    description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
+  },
+  twitter: {
+    card: "summary",
+    title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
+    description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
+  },
+  metadataBase: new URL("https://open-drone-diary.com/"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport = {

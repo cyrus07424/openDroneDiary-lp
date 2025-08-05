@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "利用規約 | OpenDroneDiary",
+  title: "利用規約",
   description: "OpenDroneDiaryの利用規約について",
 };
 
