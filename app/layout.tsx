@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://opendronediary-lp.vercel.app",
+    url: "https://open-drone-diary.com/",
     siteName: "OpenDroneDiary",
     title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
     description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
     description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
   },
-  metadataBase: new URL("https://opendronediary-lp.vercel.app"),
+  metadataBase: new URL("https://open-drone-diary.com/"),
   alternates: {
     canonical: "/",
   },
