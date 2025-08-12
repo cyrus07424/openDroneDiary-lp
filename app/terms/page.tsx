@@ -17,7 +17,7 @@ export default function Terms() {
           <h1 className="text-3xl font-bold text-deep-blue mb-8">利用規約</h1>
           
           <p className="text-gray-600 mb-6">
-            最終更新日: 2024年1月1日
+            最終更新日: 2025年1月1日
           </p>
 
           <section className="mb-8">
