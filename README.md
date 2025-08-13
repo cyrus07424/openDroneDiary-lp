@@ -40,7 +40,7 @@ npm install
 `.env.local`ファイルを作成し、以下の環境変数を設定してください：
 
 ```env
-NEXT_PUBLIC_APP_URL=https://your-drone-diary-app.com
+NEXT_PUBLIC_APP_URL=https://example.com
 NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 ```
 
