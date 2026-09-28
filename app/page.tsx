@@ -90,7 +90,7 @@ export default function Home() {
               ["📊", "ダッシュボードで一目確認", "総飛行時間、点検整備の期限超過・間近・未記録を機体ごとに表示。次のフライト前に確認すべきことがわかります。"],
             ].map(([icon, title, description]) => (
               <div key={title} className="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-3xl mb-4">{icon}</div>
+                <div className="text-3xl mb-4" aria-hidden="true">{icon}</div>
                 <h3 className="text-xl font-bold text-deep-blue mb-2">{title}</h3>
                 <p className="text-gray-600 leading-relaxed">{description}</p>
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-sky-blue" id="about">
+      <section className="py-24 bg-[#17324f]" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">

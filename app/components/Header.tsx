@@ -11,7 +11,7 @@ export default function Header() {
             🛩️ OpenDroneDiary
           </Link>
           <div className="flex items-center space-x-6">
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden xl:flex space-x-8">
               <Link href="/#features" className="text-gray-700 hover:text-deep-blue">
                 機能
               </Link>
