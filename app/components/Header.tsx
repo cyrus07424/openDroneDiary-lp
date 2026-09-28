@@ -11,9 +11,12 @@ export default function Header() {
             🛩️ OpenDroneDiary
           </Link>
           <div className="flex items-center space-x-6">
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden xl:flex space-x-8">
               <Link href="/#features" className="text-gray-700 hover:text-deep-blue">
                 機能
+              </Link>
+              <Link href="/#about" className="text-gray-700 hover:text-deep-blue">
+                オープンソース
               </Link>
               <Link href="/faq" className="text-gray-700 hover:text-deep-blue">
                 よくある質問
@@ -27,7 +30,7 @@ export default function Header() {
             </nav>
             <a
               href={appUrl}
-              className="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-colors"
+              className="bg-sunset-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors shadow-sm"
               target="_blank"
               rel="noopener noreferrer"
             >

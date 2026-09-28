@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
     template: "%s | OpenDroneDiary"
   },
-  description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
+  description: "飛行記録・日常点検・点検整備を機体ごとに管理。点検期限の確認、CSV出力、携行用印刷にも対応したオープンソースのドローン飛行日誌です。",
   keywords: ["ドローン", "飛行日誌", "管理ツール", "オープンソース", "記録", "OpenDroneDiary", "UAV", "無人航空機"],
   authors: [{ name: "OpenDroneDiary" }],
   creator: "OpenDroneDiary",
@@ -40,12 +40,12 @@ export const metadata: Metadata = {
     url: "https://open-drone-diary.com/",
     siteName: "OpenDroneDiary",
     title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
-    description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
+    description: "飛行記録・日常点検・点検整備を機体ごとに管理。点検期限の確認、CSV出力、携行用印刷にも対応したオープンソースのドローン飛行日誌です。",
   },
   twitter: {
     card: "summary",
     title: "OpenDroneDiary - オープンソースドローン飛行日誌管理ツール",
-    description: "誰でも簡単に使えるドローン飛行日誌管理ツール。飛行記録を安全に管理し、空の冒険を記録しましょう。",
+    description: "飛行記録・日常点検・点検整備を機体ごとに管理。点検期限の確認、CSV出力、携行用印刷にも対応したオープンソースのドローン飛行日誌です。",
   },
   metadataBase: new URL("https://open-drone-diary.com/"),
   alternates: {
