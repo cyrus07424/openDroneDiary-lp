@@ -142,8 +142,8 @@ export default function FAQ() {
             <div className="mb-6">
               <h3 className="text-xl font-medium text-deep-blue mb-2">Q: どのような技術で開発されていますか？</h3>
               <p className="text-gray-700">
-                A: OpenDroneDiaryは主にNext.js（React）とTypeScriptで開発されています。
-                データベースはPostgreSQLを使用しており、現代的なWeb技術スタックを採用しています。
+                A: OpenDroneDiaryのアプリケーション本体はKotlinとKtorフレームワークで開発されています。
+                データベースにはPostgreSQLを使用しています。
               </p>
             </div>
 
